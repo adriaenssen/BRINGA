@@ -16,7 +16,7 @@
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/blocs.min.js"></script>
 	<script src="./js/lazysizes.min.js" defer></script>
-    <title>Home</title>
+    <title>DØGN</title>
 
     
 <!-- Analytics -->
@@ -52,30 +52,35 @@
 </div>
 <!-- bloc-0 END -->
 
-<!-- bloc-1 -->
-<div class="bloc bgc-white l-bloc" id="bloc-1">
-	<div class="container bloc-lg">
+<!-- bloc-2 -->
+<div class="bloc none bgc-taupe-gray d-bloc " id="bloc-2">
+	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
 				
-					<script>
-      //var links = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=1360658172&amp;format=interactive";
+					<style>
+	#cputemp {
+		//margin-left: 100%;
+		//margin-right: 100%
+	}
+</style>
+
+<script>
       var i = 0;
       var renew = setInterval(function(){
-          document.getElementById("sensorliste").src = document.getElementById("sensorliste").src;
+          document.getElementById("cputemp").src = document.getElementById("cputemp").src;
         // alert("refreshed");
-      },300000); //180000 = 3 min
-
+      },300000);
 </script>
 
-<iframe id="sensorliste" width="238" height="107.5" seamless="" frameborder="0" scrolling="no" src="img/lazyload-ph.png" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=1080121350&amp;format=interactive" class="lazyload"></iframe>
+<iframe id="cputemp" width="1202.5" height="187" seamless="" frameborder="0" scrolling="no" src="img/lazyload-ph.png" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=1360658172&amp;format=interactive" class="lazyload"></iframe>
 					
 				
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-1 END -->
+<!-- bloc-2 END -->
 
 <!-- ScrollToTop Button -->
 <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
