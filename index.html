@@ -50,11 +50,23 @@
       },300000);
 </script> -->
 
-<iframe id="vindhastighet" width="1203" height="185" seamless="" frameborder="0" scrolling="no" src="img/lazyload-ph.png" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=2100050266&amp;format=interactive" class="lazyload"></iframe>
+<script>
+  setInterval(function(){ reloadIFrame2(); }, 30000);
 
-<iframe id="cpubelastning" width="1201" height="187" seamless="" frameborder="0" scrolling="no" src="img/lazyload-ph.png" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=1994253844&amp;format=interactive" class="lazyload"></iframe>
+  function reloadIFrame2() {
 
-<iframe id="cputemp" width="1202.5" height="187" seamless="" frameborder="0" scrolling="no" src="img/lazyload-ph.png" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=1360658172&amp;format=interactive" class="lazyload"></iframe>
+  var elements = document.getElementsByClassName("sensorgraf");
+  for (var i = 0, len = elements.length; i < len; i++) {
+    elements[i]["src"] =  elements[i]["src"];
+  }
+}
+</script>
+
+<iframe class="sensorgraf" width="1203" height="185" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=2100050266&amp;format=interactive"></iframe>
+
+<iframe class="sensorgraf" width="1201" height="187" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=1994253844&amp;format=interactive"></iframe>
+
+<iframe class="sensorgraf" width="1202" height="187" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLHyxKhQzGf28Pgv86LFdxJFRPw-HTtVBu3_A09Y6q8aiuOrcuddwOSatM7HX31REA6JSdntB6GodK/pubchart?oid=1360658172&amp;format=interactive"></iframe>
 
 
 			</div>
